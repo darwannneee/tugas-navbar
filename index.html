@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="w3.css">
+</head>
+<body>
+    <div class="w3-container">
+        <img src="background.png" alt="" style="width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-position: top;">
+    </div>
+    <div class="w3-bar w3-blue">
+        <button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Java')">Java</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('PHP')">PHP</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('Pascal')">Pascal</button>
+        <button class="w3-bar-item w3-button" onclick="openKota('C')">C</button>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button w3-button">Hover Over Me!</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+              <a href="#" class="w3-bar-item w3-button">Link 1</a>
+              <a href="#" class="w3-bar-item w3-button">Link 2</a>
+              <a href="#" class="w3-bar-item w3-button">Link 3</a>
+            </div>
+        </div>
+    </div>
+    <div id="Home" class="w3-container kota">
+        <h2>Home</h2>
+        <p>Java adalah bahasa pemrograman yang dapat dijalankan di berbagai komputer termasuk telepon genggam. Bahasa ini awalnya dibuat oleh James Gosling saat masih bergabung di Sun Microsystems, yang saat ini merupakan bagian dari Oracle dan dirilis tahun 1995. Bahasa ini banyak mengadopsi sintaksis yang terdapat pada C dan C++ namun dengan sintaksis model objek yang lebih sederhana serta dukungan rutin-rutin aras bawah yang minimal. Aplikasi-aplikasi berbasis java umumnya dikompilasi ke dalam p-code (bytecode) dan dapat dijalankan pada berbagai Mesin Virtual Java (JVM).</p>
+    </div>
+    <div id="Java" class="w3-container kota w3-animate-top" style="display:none">
+        <h2>Java</h2>
+        <p>Java adalah bahasa pemrograman yang dapat dijalankan di berbagai komputer termasuk telepon genggam. Bahasa ini awalnya dibuat oleh James Gosling saat masih bergabung di Sun Microsystems, yang saat ini merupakan bagian dari Oracle dan dirilis tahun 1995. Bahasa ini banyak mengadopsi sintaksis yang terdapat pada C dan C++ namun dengan sintaksis model objek yang lebih sederhana serta dukungan rutin-rutin aras bawah yang minimal. Aplikasi-aplikasi berbasis java umumnya dikompilasi ke dalam p-code (bytecode) dan dapat dijalankan pada berbagai Mesin Virtual Java (JVM).</p>
+        <img src="https://proxsisgroup.com/wp-content/uploads/2019/08/104-1040733_kotlin-java-programming-language-logo-clipart-1024x598.png" alt="" width="400" height="200">
+    </div>
+    <div id="PHP" class="w3-container kota w3-animate-bottom" style="display:none">
+        <h2>PHP</h2>
+        <p>
+            PHP  (PHP: Hypertext Preprocessor) adalah sebuah bahasa pemrograman server side scripting yang bersifat open source.
+            Sebagai sebuah scripting language, PHP menjalankan instruksi pemrograman saat proses runtime. Hasil dari instruksi tentu akan berbeda tergantung data yang diproses.
+            PHP merupakan bahasa pemrograman server-side, maka script dari PHP nantinya akan diproses di server. Jenis server yang sering digunakan bersama dengan PHP antara lain Apache, Nginx, dan LiteSpeed. 
+            Selain itu, PHP juga merupakan bahasa pemrograman yang bersifat open source. Pengguna bebas memodifikasi dan mengembangkan sesuai dengan kebutuhan mereka.</p>
+    </div>
+    <div id="Left" class="w3-container kota w3-animate-left" style="display:none">
+        <h2>Left</h2>
+        <p>Memunculkan teks dari bawah ke atas menggunakan animate Left</p>
+    </div>
+    <div id="Right" class="w3-container kota w3-animate-right" style="display:none">
+        <h2>Right</h2>
+        <p>Memunculkan teks dari bawah ke atas menggunakan animate Right</p>
+    </div>
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namakota).style.display = "block";
+}
+</script>
+</body>
+</html>
